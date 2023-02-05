@@ -88,7 +88,7 @@ keymap("n", "<leader>N", ":NvimTreeFindFile<CR>", opts)
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 
 -- Terminal
-keymap("t", "<esc>", [[<C-\><C-n>]], opts)
+keymap("t", "<A-esc>", [[<C-\><C-n>]], opts)
 keymap("n", "<leader>G", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", { noremap = true, silent = true })
 keymap("n", "<leader>t", "<cmd>lua _MYTERM_TOGGLE()<CR>", { noremap = true, silent = true })
 keymap("t", "<A-h>", [[<C-\><C-n><C-W>h]], opts)

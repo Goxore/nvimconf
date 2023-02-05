@@ -64,7 +64,7 @@ vim.keymap.set({ "i", "s" }, "<A-n>", function()
 end)
 
 -- languages and frameworks --
--- ls.add_snippets("cs", require("pluginconf.snippets.unity"))
+ls.add_snippets("cs", require("snippets.unity"))
 
 
 ls.add_snippets("all", {

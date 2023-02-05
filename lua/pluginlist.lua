@@ -65,7 +65,7 @@ return {
 
     -- Telescope
     "nvim-telescope/telescope.nvim",
-    { 
+    {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make"
     },
@@ -212,7 +212,7 @@ return {
         end,
     },
 
-    { 
+    {
         "norcalli/nvim-colorizer.lua",
         config = function()
             require "colorizer".setup {
@@ -227,7 +227,7 @@ return {
         ft = { "html", "css", "javascript", "typescript", "svelte", "lua", "yaml", "xml" }
     },
 
-    { 
+    {
         "eandrju/cellular-automaton.nvim",
         cmd = "CellularAutomaton"
     },
@@ -242,6 +242,7 @@ return {
                 },
             }
         end,
+        ft = "markdown"
     },
 
     "anuvyklack/windows.nvim",
