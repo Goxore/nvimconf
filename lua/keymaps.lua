@@ -100,7 +100,7 @@ keymap("t", "<A-l>", [[<C-\><C-n><C-W>l]], opts)
 keymap("n", "<leader><leader>s", "<cmd>source ~/.config/nvim/lua/luasnipconf.lua<CR>", opts)
 
 -- preview
-keymap("n", "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)
+keymap("n", "<leader>p", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)
 keymap("n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementationn()<CR>", opts)
 
 -- git signs
@@ -119,6 +119,8 @@ keymap("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", opts)
+keymap("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>", opts)
+keymap("n", "<leader>fS", "<cmd>Telescope lsp_dynamic_workspace_symbols<CR>", opts)
 keymap("n", "<leader>b", "<cmd>Telescope buffers<CR>", opts)
 
 -- Special

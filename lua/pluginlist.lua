@@ -251,5 +251,23 @@ return {
     "toppair/reach.nvim",
 
     -- undo tree
-    "mbbill/undotree"
+    "mbbill/undotree",
+
+    -- {
+    --     "edluffy/hologram.nvim",
+    --     config = function()
+    --         require('hologram').setup{
+    --             auto_display = true -- WIP automatic markdown image display, may be prone to breaking
+    --         }
+    --     end
+    -- },
+
+    {
+      "dnlhc/glance.nvim",
+      config = function()
+        require('glance').setup({
+          -- your configuration
+        })
+      end,
+    }
 }

@@ -84,6 +84,9 @@ end
 
 -- standalone lsp
 require 'lspconfig'.gdscript.setup {}
+require 'lspconfig'.dartls.setup {
+    on_attach = on_attach
+}
 
 -- Mason lsp
 require("mason-lspconfig").setup_handlers({
@@ -117,8 +120,8 @@ require("mason-lspconfig").setup_handlers({
         }
     end,
 
-    ["sumneko_lua"] = function()
-        lspconfig.sumneko_lua.setup {
+    ["lua_ls"] = function()
+        lspconfig.lua_ls.setup {
             settings = {
                 Lua = {
                     runtime = {
